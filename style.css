@@ -1,0 +1,56 @@
+
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-avatar1 {
+    width: 25px;
+    height: 25px;
+    background-position: -20px -20px;
+}
+
+.sprite-avatar2 {
+    width: 25px;
+    height: 25px;
+    background-position: -20px -85px;
+}
+
+.sprite-avatar3 {
+    width: 25px;
+    height: 25px;
+    background-position: -20px -150px;
+}
+
+.sprite-icon-add-comment-btn {
+    width: 34px;
+    height: 30px;
+    background-position: -20px -215px;
+}
+
+.sprite-icon-link-modal {
+    width: 17px;
+    height: 17px;
+    background-position: -20px -285px;
+}
+
+.sprite-icon-link-status {
+    width: 17px;
+    height: 17px;
+    background-position: -20px -342px;
+}
+
+.sprite-icon-mark-cross-question {
+    width: 75px;
+    height: 25px;
+    background-position: -20px -399px;
+}
+
+.sprite-icon-search {
+    width: 15px;
+    height: 15px;
+    background-position: -20px -464px;
+}
