@@ -3,246 +3,251 @@
   <head>
     <meta charset="utf-8">
     <title>SystemGet</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:300,300i,400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <aside class="user-panel">
-        <button class="main-menu-btn" type="button">Меню</button>
-        <a>SystemGet</a>
-        <a class="user-profile" href="#">Профиль</a>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            Обработка
-            <ul class="process">
-              <li>
-                <a href="#">Актуальные</a>
-              </li>
-              <li>
-                <a href="#">В работе</a>
-              </li>
-              <li>
-                <a href="#">Разъяснение</a>
-              </li>
-              <li>
-                <a href="#">Подготовка заявки</a>
-              </li>
-              <li>
-                <a href="#">Отклоненные</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Результат
-            <ul class="result">
-              <li>
-                <a href="#">Выигранные</a>
-              </li>
-              <li>
-                <a href="#">Проигранные</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Поступления
-            <ul class="income">
-              <li>
-                <a href="#">Новые</a>
-              </li>
-              <li>
-                <a href="#">Отобранные</a>
-              </li>
-              <li>
-                <a href="#">Спам</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Настройки системы
-            <ul class="settings">
-              <li>
-                <a href="#">Запросы</a>
-              </li>
-              <li>
-                <a href="#">Журнал</a>
-              </li>
-              <li>
-                <a href="#">Пользователи</a>
-              </li>
-              <li>
-                <a href="#">Статистика</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <form action="#" method="get">
-              <input type="search" name="search" placeholder="Поиск...">
-            </form>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="container">
+      <aside class="user-panel">
+          <button class="main-menu-btn" type="button">Меню</button>
+          <a>SystemGet</a>
+          <a class="user-profile" href="#">Профиль</a>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              Обработка
+              <ul class="process">
+                <li>
+                  <a href="#">Актуальные</a>
+                </li>
+                <li>
+                  <a href="#">В работе</a>
+                </li>
+                <li>
+                  <a href="#">Разъяснение</a>
+                </li>
+                <li>
+                  <a href="#">Подготовка заявки</a>
+                </li>
+                <li>
+                  <a href="#">Отклоненные</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Результат
+              <ul class="result">
+                <li>
+                  <a href="#">Выигранные</a>
+                </li>
+                <li>
+                  <a href="#">Проигранные</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Поступления
+              <ul class="income">
+                <li>
+                  <a href="#">Новые</a>
+                </li>
+                <li>
+                  <a href="#">Отобранные</a>
+                </li>
+                <li>
+                  <a href="#">Спам</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Настройки системы
+              <ul class="settings">
+                <li>
+                  <a href="#">Запросы</a>
+                </li>
+                <li>
+                  <a href="#">Журнал</a>
+                </li>
+                <li>
+                  <a href="#">Пользователи</a>
+                </li>
+                <li>
+                  <a href="#">Статистика</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <form action="#" method="get">
+                <input type="search" name="search" placeholder="Поиск...">
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-    <main>
-      <section class="actual-content">
-        <h1 class="main-content-title">Актуальные</h1>
-        <table class="main-content-table">
-          <tr>
-            <th>#</th>
-            <th>Статус</th>
-            <th>Наименование</th>
-            <th>Процедура</th>
-            <th>НМЦ</th>
-            <th>Срок<span class="sorting"></span></th>
-            <th colspan="2">ФЗ</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>
-              <div class="status-panel">
-                <div class="status-item-first"></div>
-                <div class="status-item-second"></div>
-                <div class="status-item-third"></div>
-              </div>
-            </td>
-            <td>Услуги по сопровождению сайта (689932)</td>
-            <td>Открытый запрос предложений</td>
-            <td>1 200 000 &#8381;</td>
-            <td>15.08.2016</td>
-            <td>ФЗ-223</td>
-            <td><span class="link-status-icon"></span></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              <div class="status-panel">
-                <div class="status-item-first"></div>
-                <div class="status-item-second"></div>
-                <div class="status-item-third"></div>
-              </div>
-            </td>
-            <td>Услуги по сопровождению сайта (689932)</td>
-            <td>Открытый запрос предложений</td>
-            <td>1 200 000 &#8381;</td>
-            <td>15.08.2016</td>
-            <td>ФЗ-223</td>
-            <td><span class="link-status-icon"></span></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              <div class="status-panel">
-                <div class="status-item-first"></div>
-                <div class="status-item-second"></div>
-                <div class="status-item-third"></div>
-              </div>
-            </td>
-            <td>Услуги по сопровождению сайта (689932)</td>
-            <td>Открытый запрос предложений</td>
-            <td>1 200 000 &#8381;</td>
-            <td>15.08.2016</td>
-            <td>ФЗ-223</td>
-            <td><span class="link-status-icon"></span></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>
-              <div class="status-panel">
-                <div class="status-item-first"></div>
-                <div class="status-item-second"></div>
-                <div class="status-item-third"></div>
-              </div>
-            </td>
-            <td>Услуги по сопровождению сайта (689932)</td>
-            <td>Открытый запрос предложений</td>
-            <td>1 200 000 &#8381;</td>
-            <td>15.08.2016</td>
-            <td>ФЗ-223</td>
-            <td><span class="link-status-icon"></span></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>
-              <div class="status-panel">
-                <div class="status-item-first"></div>
-                <div class="status-item-second"></div>
-                <div class="status-item-third"></div>
-              </div>
-            </td>
-            <td>Услуги по сопровождению сайта (689932)</td>
-            <td>Открытый запрос предложений</td>
-            <td>1 200 000 &#8381;</td>
-            <td>15.08.2016</td>
-            <td>ФЗ-223</td>
-            <td><span class="link-status-icon"></span></td>
-          </tr>
-        </table>
+      <main>
+        <section class="actual-content">
+          <h1 class="main-content-title">Актуальные</h1>
+          <table class="main-content-table">
+            <tr>
+              <th>#</th>
+              <th>Статус</th>
+              <th>Наименование</th>
+              <th>Процедура</th>
+              <th>НМЦ</th>
+              <th>Срок<span class="sorting"></span></th>
+              <th colspan="2">ФЗ</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="status-panel">
+                  <div class="status-item-first"></div>
+                  <div class="status-item-second"></div>
+                  <div class="status-item-third"></div>
+                </div>
+              </td>
+              <td>Услуги по сопровождению сайта (689932)</td>
+              <td>Открытый запрос предложений</td>
+              <td>1 200 000 &#8381;</td>
+              <td>15.08.2016</td>
+              <td>ФЗ-223</td>
+              <td><span class="link-status-icon"></span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div class="status-panel">
+                  <div class="status-item-first"></div>
+                  <div class="status-item-second"></div>
+                  <div class="status-item-third"></div>
+                </div>
+              </td>
+              <td>Услуги по сопровождению сайта (689932)</td>
+              <td>Открытый запрос предложений</td>
+              <td>1 200 000 &#8381;</td>
+              <td>15.08.2016</td>
+              <td>ФЗ-223</td>
+              <td><span class="link-status-icon"></span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <div class="status-panel">
+                  <div class="status-item-first"></div>
+                  <div class="status-item-second"></div>
+                  <div class="status-item-third"></div>
+                </div>
+              </td>
+              <td>Услуги по сопровождению сайта (689932)</td>
+              <td>Открытый запрос предложений</td>
+              <td>1 200 000 &#8381;</td>
+              <td>15.08.2016</td>
+              <td>ФЗ-223</td>
+              <td><span class="link-status-icon"></span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <div class="status-panel">
+                  <div class="status-item-first"></div>
+                  <div class="status-item-second"></div>
+                  <div class="status-item-third"></div>
+                </div>
+              </td>
+              <td>Услуги по сопровождению сайта (689932)</td>
+              <td>Открытый запрос предложений</td>
+              <td>1 200 000 &#8381;</td>
+              <td>15.08.2016</td>
+              <td>ФЗ-223</td>
+              <td><span class="link-status-icon"></span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <div class="status-panel">
+                  <div class="status-item-first"></div>
+                  <div class="status-item-second"></div>
+                  <div class="status-item-third"></div>
+                </div>
+              </td>
+              <td>Услуги по сопровождению сайта (689932)</td>
+              <td>Открытый запрос предложений</td>
+              <td>1 200 000 &#8381;</td>
+              <td>15.08.2016</td>
+              <td>ФЗ-223</td>
+              <td><span class="link-status-icon"></span></td>
+            </tr>
+          </table>
+        </section>
+      </main>
+
+      <section class="modal">
+        <div class="modal-container">
+          <h2 class="modal-header">
+            Услуги по сопровождению сайта (689932)
+            <span class="link-icon"></span>
+          </h2>
+          <p>Найдено <time datetime="2016-06-20">20/06/2016</time> по слову <q>Интернет-ресурс</q></p>
+          <ul class="money-info">
+            <li>
+              НМЦ<br>
+              <span class="price">1 200 000 &#8381;</span>
+            </li>
+            <li>
+              Заявка<br>
+              <span class="price">3 500 &#8381;</span>
+            </li>
+            <li>
+              Исполнение<br>
+              <span class="price">35 000 &#8381;</span>
+            </li>
+          </ul>
+          <div class="modal-dates">
+            <div>Размещена 19/06/2016</div>
+            <div>Обновлена 04/08/2016</div>
+          </div>
+          <div class="modal-controls">
+            <button class="modal-controls-btn issue" type="button">?</button>
+            <button class="modal-controls-btn approve" type="button">Одобрить</button>
+            <button class="modal-controls-btn deny" type="button">Отклонить</button>
+          </div>
+          <div class="procurement-method">
+            <div>Способ закупки</div>
+            <div>Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
+          </div>
+          <div class="deadline">
+            <div>Срок подачи</div>
+            <div>02/09/2016</div>
+          </div>
+          <div class="status">
+            <div>Статус</div>
+            <div>
+              Ожидает проверки менеджером
+              <ul class="action-log">
+                <li>04/08/2016 13:35 &mdash; Утверждено специалистом</li>
+                <li>04/08/2016 10:35 &mdash; Утверждено директором</li>
+                <li>04/08/2016 09:00 &mdash; Одобрено к обработке</li>
+                <li>03/08/2016 04:55 &mdash; Загружено</li>
+              </ul>
+            </div>
+          </div>
+          <div class="comments">
+            <div>Комментарии</div>
+            <div>
+              <form action="#" method="post">
+                <textarea name="comment"></textarea>
+                <button class="add-comment-btn" type="submit"></button>
+              </form>
+            </div>
+            <div class="modal-comments-list">
+              <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
+              <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
-
-    <section class="modal">
-      <div class="modal-container">
-        <h2 class="modal-header">
-          Услуги по сопровождению сайта (689932)
-          <span class="link-icon"></span>
-        </h2>
-        <p>Найдено <time datetime="2016-06-20">20/06/2016</time> по слову <q>Интернет-ресурс</q></p>
-        <ul class="money-info">
-          <li>
-            НМЦ<br>
-            <span class="price">1 200 000 &#8381;</span>
-          </li>
-          <li>
-            Заявка<br>
-            <span class="price">3 500 &#8381;</span>
-          </li>
-          <li>
-            Исполнение<br>
-            <span class="price">35 000 &#8381;</span>
-          </li>
-        </ul>
-        <div class="modal-dates">
-          <div>Размещена 19/06/2016</div>
-          <div>Обновлена 04/08/2016</div>
-        </div>
-        <div class="modal-controls">
-          <button class="modal-controls-btn issue" type="button">?</button>
-          <button class="modal-controls-btn approve" type="button">Одобрить</button>
-          <button class="modal-controls-btn deny" type="button">Отклонить</button>
-        </div>
-        <div class="procurement-method">
-          <div>Способ закупки</div>
-          <div>Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
-        </div>
-        <div class="deadline">
-          <div>Срок подачи</div>
-          <div>02/09/2016</div>
-        </div>
-        <div class="status">
-          <div>Статус</div>
-          <div>
-            Ожидает проверки менеджером
-            <ul class="action-log">
-              <li>04/08/2016 13:35 &mdash; Утверждено специалистом</li>
-              <li>04/08/2016 10:35 &mdash; Утверждено директором</li>
-              <li>04/08/2016 09:00 &mdash; Одобрено к обработке</li>
-              <li>03/08/2016 04:55 &mdash; Загружено</li>
-            </ul>
-          </div>
-        </div>
-        <div class="comments">
-          <div>Комментарии</div>
-          <div>
-            <form action="#" method="post">
-              <textarea name="comment"></textarea>
-              <button class="add-comment-btn" type="submit"></button>
-            </form>
-          </div>
-          <div class="modal-comments-list">
-            <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
-            <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
