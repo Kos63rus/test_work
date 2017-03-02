@@ -10,11 +10,14 @@
   <body>
     <div class="container">
       <aside class="user-panel">
-          <button class="main-menu-btn" type="button">
+          <button class="main-menu-btn" type="button" title="Меню">
             <span class="visually-hidden">Меню</span>
+            <div class="icon-main-menu-btn"></div>
           </button>
-          <a>SystemGet</a>
-          <a class="user-profile" href="#">Профиль</a>
+          <a class="service-name">SystemGet</a>
+          <a class="user-profile sprite sprite-avatar1" href="#" title="Профиль">
+            <span class="visually-hidden">Профиль</span>
+          </a>
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li>
@@ -79,12 +82,11 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <form action="#" method="get">
-                <input type="search" name="search" placeholder="Поиск...">
-              </form>
-            </li>
           </ul>
+          <form class="search-form" action="#" method="get">
+            <input type="search" name="search" placeholder="Поиск...">
+            <span class="search-icon sprite sprite-icon-search"></span>
+          </form>
         </nav>
       </aside>
 
@@ -243,7 +245,7 @@
               <form action="#" method="post">
                 <textarea name="comment"></textarea>
                 <button class="add-comment-btn" type="submit"></button>
-              </form>            
+              </form>
               <div class="modal-comments-list">
                 <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
                 <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
