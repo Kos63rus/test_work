@@ -135,7 +135,26 @@ body {
   margin-bottom: 14px;
 }
 
+.flag-new::after {
+  content: "3";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  box-sizing: border-box;
+  width: 17px;
+  height: 17px;
+  padding-top: 2.5px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: #23a2ff;
+  border-radius: 50%;
+}
+
 .main-navigation-list a {
+  position: relative;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
@@ -181,7 +200,7 @@ body {
 
 .actual-content {
   /*display: none;*/
-  min-width: 950px;
+  width: 950px;
   min-height: 760px;
   margin-left: 200px;
   color: #000000;
@@ -207,9 +226,193 @@ body {
 }
 
 .main-content-table {
+  box-sizing: border-box;
+  width: 900px;
+  /*min-height: 450px;*/
+  margin: 0;
   margin-top: 25px;
   margin-left: 25px;
-  outline: 1px solid green;
+  padding: 0;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  /*outline: 1px solid green;*/
+}
+
+.main-content-table th,
+.main-content-table td {
+  /*min-height: 50px;*/
+  text-align: left;
+  border-bottom: 2px solid #eef2f5;
+  outline: 1px solid red;
+}
+
+.main-content-table th:nth-child(1),
+.main-content-table td:nth-child(1) {
+  width: 50px;
+  text-align: center;
+}
+
+.main-content-table th:nth-child(2),
+.main-content-table td:nth-child(2) {
+  width: 75px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+.main-content-table th:nth-child(3),
+.main-content-table td:nth-child(3) {
+  width: 265px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.main-content-table th:nth-child(4),
+.main-content-table td:nth-child(4) {
+  padding-left: 30px;
+  padding-right: 16px;
+}
+
+.main-content-table th {
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 32px;
+  vertical-align: top;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.status-panel {
+  display: flex;
+  box-sizing: border-box;
+  width: 75px;
+  height: 25px;
+  border: 2px solid #000000;
+}
+
+.status-panel .status-item-first {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+
+.status-panel .status-item-first::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  width: 2px;
+  height: 17px;
+  background-color: #000000;
+  z-index: 10;
+}
+
+.status-panel .status-item-second {
+  position: relative;
+  width: 25px;
+  height: 21px;
+}
+
+.status-panel .status-item-second::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  width: 2px;
+  height: 17px;
+  background-color: #000000;
+  z-index: 10;
+}
+
+.status-panel .status-item-third {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+
+.status-panel .mark {
+  background-color: #3fb384;
+}
+
+.status-panel .mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.5px;
+  margin-left: -6.5px;
+  width: 13px;
+  height: 13px;
+  background: url("../img/spritesheet.png") no-repeat -19px -399px;
+}
+
+.status-panel .cross {
+  background-color: #e07058;
+}
+
+.status-panel .cross::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.5px;
+  margin-left: -6.5px;
+  width: 13px;
+  height: 13px;
+  background: url("../img/spritesheet.png") no-repeat -43px -399px;
+}
+
+.status-panel .question {
+  background-color: #fed855;
+}
+
+.status-panel .question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.5px;
+  margin-left: -6.5px;
+  width: 13px;
+  height: 13px;
+  background: url("../img/spritesheet.png") no-repeat -68px -399px;
+}
+
+.main-content-table .sorting {
+  position: relative;
+}
+
+.main-content-table .sorting::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 7px solid #c6c8cc;
+}
+
+.main-content-table .sorting::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 7px solid #1d2532;
+}
+
+.main-content-table .link-status-icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: #d1dde5;
+  border: 4px solid #d1dde5;
 }
 
 .modal {
@@ -340,13 +543,13 @@ body {
 }
 
 .sprite-icon-mark-cross-question {
-    width: 75px;
-    height: 25px;
+    width: 58px;
+    height: 13px;
     background-position: -20px -399px;
 }
 
 .sprite-icon-search {
     width: 15px;
     height: 15px;
-    background-position: -20px -464px;
+    background-position: -20px -452px;
 }
