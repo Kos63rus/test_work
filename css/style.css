@@ -20,6 +20,13 @@ body {
   outline: 1px solid red;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+}
+
 .user-panel {
   position: relative;
   width: 50px;
@@ -70,9 +77,78 @@ body {
 }
 
 .modal-container {
+  display: flex;
+  flex-direction: column;
   width: 550px;
   margin: 0 auto;
+  padding-top: 28px;
   outline: 1px solid red;
+}
+
+.modal-title {
+  width: 525px;
+  min-height: 20px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  outline: 1px solid green;
+}
+
+.modal-title + p {
+  width: 550px;
+  min-height: 18px;
+  margin-bottom: 20px;
+  outline: 1px solid green;
+}
+
+.modal .money-info {
+  display: flex;
+  width: 550px;
+  min-height: 75px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid green;
+}
+
+.modal .dates-and-controls-wrapper {
+  display: flex;
+  width: 550px;
+  min-height: 50px;
+  margin-bottom: 21px;
+  outline: 1px solid green;
+}
+
+.modal .procurement-method {
+  display: flex;
+  width: 550px;
+  min-height: 35px;
+  margin-bottom: 25px;
+  outline: 1px solid green;
+}
+
+.modal .deadline {
+  display: flex;
+  width: 550px;
+  min-height: 18px;
+  margin-bottom: 25px;
+  outline: 1px solid green;
+}
+
+.modal .status {
+  display: flex;
+  width: 550px;
+  min-height: 100px;
+  margin-bottom: 25px;
+  outline: 1px solid green;
+}
+
+.modal .comments {
+  display: flex;
+  width: 550px;
+  min-height: 225px;
+  outline: 1px solid green;
 }
 
 .sprite {

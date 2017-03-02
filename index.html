@@ -10,11 +10,13 @@
   <body>
     <div class="container">
       <aside class="user-panel">
-          <button class="main-menu-btn" type="button">Меню</button>
+          <button class="main-menu-btn" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
           <a>SystemGet</a>
           <a class="user-profile" href="#">Профиль</a>
         <nav class="main-navigation">
-          <ul>
+          <ul class="main-navigation-list">
             <li>
               Обработка
               <ul class="process">
@@ -185,7 +187,7 @@
 
       <section class="modal">
         <div class="modal-container">
-          <h2 class="modal-header">
+          <h2 class="modal-title">
             Услуги по сопровождению сайта (689932)
             <span class="link-icon"></span>
           </h2>
@@ -204,26 +206,28 @@
               <span class="price">35 000 &#8381;</span>
             </li>
           </ul>
-          <div class="modal-dates">
-            <div>Размещена 19/06/2016</div>
-            <div>Обновлена 04/08/2016</div>
-          </div>
-          <div class="modal-controls">
-            <button class="modal-controls-btn issue" type="button">?</button>
-            <button class="modal-controls-btn approve" type="button">Одобрить</button>
-            <button class="modal-controls-btn deny" type="button">Отклонить</button>
+          <div class="dates-and-controls-wrapper">
+            <div class="modal-dates">
+              <div>Размещена 19/06/2016</div>
+              <div>Обновлена 04/08/2016</div>
+            </div>
+            <div class="modal-controls">
+              <button class="modal-controls-btn issue" type="button">?</button>
+              <button class="modal-controls-btn approve" type="button">Одобрить</button>
+              <button class="modal-controls-btn deny" type="button">Отклонить</button>
+            </div>
           </div>
           <div class="procurement-method">
-            <div>Способ закупки</div>
-            <div>Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
+            <div class="layout-wrapper-left">Способ закупки</div>
+            <div class="layout-wrapper-right">Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
           </div>
           <div class="deadline">
-            <div>Срок подачи</div>
-            <div>02/09/2016</div>
+            <div class="layout-wrapper-left">Срок подачи</div>
+            <div class="layout-wrapper-right">02/09/2016</div>
           </div>
           <div class="status">
-            <div>Статус</div>
-            <div>
+            <div class="layout-wrapper-left">Статус</div>
+            <div class="layout-wrapper-right">
               Ожидает проверки менеджером
               <ul class="action-log">
                 <li>04/08/2016 13:35 &mdash; Утверждено специалистом</li>
@@ -234,16 +238,16 @@
             </div>
           </div>
           <div class="comments">
-            <div>Комментарии</div>
-            <div>
+            <div class="layout-wrapper-left">Комментарии</div>
+            <div class="layout-wrapper-right">
               <form action="#" method="post">
                 <textarea name="comment"></textarea>
                 <button class="add-comment-btn" type="submit"></button>
-              </form>
-            </div>
-            <div class="modal-comments-list">
-              <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
-              <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
+              </form>            
+              <div class="modal-comments-list">
+                <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
+                <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
+              </div>
             </div>
           </div>
         </div>
