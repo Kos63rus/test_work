@@ -10,15 +10,19 @@
   <body>
     <div class="container">
       <aside class="user-panel">
-          <button class="main-menu-btn" type="button" title="Меню">
+          <a class="main-menu-btn open-menu" href="#main-navigation" title="Меню">
             <span class="visually-hidden">Меню</span>
             <span class="icon-main-menu-btn"></span>
-          </button>
+          </a>
+          <a class="close-menu" href="#" title="Меню">
+            <span class="visually-hidden">Меню</span>
+            <span class="icon-main-menu-btn"></span>
+          </a>
           <a class="service-name">SystemGet</a>
           <a class="user-profile sprite sprite-avatar1" href="#" title="Профиль">
             <span class="visually-hidden">Профиль</span>
           </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation" id="main-navigation">
           <ul class="main-navigation-list">
             <li>
               Обработка
