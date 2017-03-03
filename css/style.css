@@ -17,7 +17,7 @@ body {
   width: 1200px;
   min-height: 760px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .visually-hidden {
@@ -49,6 +49,7 @@ body {
 
 .icon-main-menu-btn {
   position: relative;
+  display: block;
   width: 20px;
   height: 10px;
   border-top: 2px solid #ffffff;
@@ -205,7 +206,7 @@ body {
   margin-left: 200px;
   color: #000000;
   background-color: #eef2f5;
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
 }
 
 .main-content-title {
@@ -237,11 +238,23 @@ body {
   /*outline: 1px solid green;*/
 }
 
+.main-content-table th {
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 32px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #000000;
+}
+
 .main-content-table th,
 .main-content-table td {
   box-sizing: border-box;
   height: 75px;
   text-align: left;
+  vertical-align: top;
   border-bottom: 2px solid #eef2f5;
   /*outline: 1px solid red;*/
 }
@@ -254,9 +267,8 @@ body {
   text-align: center;
 }
 
-.main-content-table td:nth-child(1) {
+.main-content-table td:not(:nth-child(2)) {
   padding-top: 20px;
-  vertical-align: top;
 }
 
 .main-content-table th:nth-child(2),
@@ -269,7 +281,6 @@ body {
 
 .main-content-table td:nth-child(2) {
   padding-top: 15px;
-  vertical-align: top;
 }
 
 .main-content-table th:nth-child(3),
@@ -277,6 +288,11 @@ body {
   width: 275px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.main-content-table td:nth-child(3) {
+  padding-top: 20px;
+  vertical-align: top;
 }
 
 .main-content-table th:nth-child(4),
@@ -314,21 +330,9 @@ body {
 
 .main-content-table td:nth-child(8) {
   width: 55px;
+  padding-top: 15px;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-
-.main-content-table th {
-  padding: 0;
-  padding-top: 23px;
-  padding-bottom: 32px;
-  vertical-align: top;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 600;
-  color: #000000;
 }
 
 .status-panel {
@@ -465,13 +469,16 @@ body {
 }
 
 .modal {
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 0;
   right: 0;
   width: 600px;
   min-height: 760px;
+  color: #000000;
+  background-color: #ffffff;
   outline: 1px solid green;
+  z-index: 500;
 }
 
 .modal-container {
@@ -483,19 +490,68 @@ body {
   outline: 1px solid red;
 }
 
+.modal-content-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 15px;
+  height: 15px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -2px;
+  width: 21px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.modal-content-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .modal-title {
+  position: relative;
   width: 525px;
   min-height: 20px;
   margin: 0;
   margin-bottom: 14px;
   padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
   outline: 1px solid green;
+}
+
+.modal-title .link-icon {
+  position: absolute;
+  top: 3px;
+  right: 110px;
+  display: block;
+  width: 17px;
+  height: 17px;
 }
 
 .modal-title + p {
   width: 550px;
   min-height: 18px;
   margin-bottom: 20px;
+  font-weight: 300;
+  font-style: italic;
   outline: 1px solid green;
 }
 
@@ -506,8 +562,38 @@ body {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   list-style: none;
   outline: 1px solid green;
+}
+
+.money-info li {
+  padding-top: 18px;
+  padding-left: 25px;
+  background-color: #eef2f5;
+}
+
+.money-info li:nth-child(1) {
+  width: 200px;
+  margin-right: 25px;
+}
+
+.money-info li:nth-child(2) {
+  width: 150px;
+  margin-right: 25px;
+}
+
+.money-info li:nth-child(3) {
+  width: 150px;
+}
+
+.money-info .price {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
 }
 
 .modal .dates-and-controls-wrapper {
