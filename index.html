@@ -228,8 +228,14 @@
           </ul>
           <div class="dates-and-controls-wrapper">
             <div class="modal-dates">
-              <div>Размещена 19/06/2016</div>
-              <div>Обновлена 04/08/2016</div>
+              <div class="layout-wrapper-left">
+                <span class="modal-dates-heading">Размещена</span>
+                <time datetime="2016-06-19">19/06/2016</time>
+              </div>
+              <div class="layout-wrapper-right">
+                <span class="modal-dates-heading">Обновлена</span>
+                <time datetime="2016-08-04">04/08/2016</time>
+              </div>
             </div>
             <div class="modal-controls">
               <button class="modal-controls-btn issue" type="button">?</button>
@@ -238,16 +244,16 @@
             </div>
           </div>
           <div class="procurement-method">
-            <div class="layout-wrapper-left">Способ закупки</div>
-            <div class="layout-wrapper-right">Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
+            <div class="layout-wrapper-left-column">Способ закупки</div>
+            <div class="layout-wrapper-right-column">Открытый аукцион (2-х этапный) в элеткронной форме (закупка является многоэтапной)</div>
           </div>
           <div class="deadline">
-            <div class="layout-wrapper-left">Срок подачи</div>
-            <div class="layout-wrapper-right">02/09/2016</div>
+            <div class="layout-wrapper-left-column">Срок подачи</div>
+            <div class="layout-wrapper-right-column">02/09/2016</div>
           </div>
           <div class="status">
-            <div class="layout-wrapper-left">Статус</div>
-            <div class="layout-wrapper-right">
+            <div class="layout-wrapper-left-column">Статус</div>
+            <div class="layout-wrapper-right-column">
               Ожидает проверки менеджером
               <ul class="action-log">
                 <li>04/08/2016 13:35 &mdash; Утверждено специалистом</li>
@@ -258,17 +264,34 @@
             </div>
           </div>
           <div class="comments">
-            <div class="layout-wrapper-left">Комментарии</div>
-            <div class="layout-wrapper-right">
-              <form action="#" method="post">
+            <div class="layout-wrapper-left-column">Комментарии</div>
+            <div class="layout-wrapper-right-column">
+              <form class="comment-form" action="#" method="post">
                 <textarea name="comment"></textarea>
-                <button class="add-comment-btn" type="submit"></button>
+                <button class="add-comment-btn .sprite .sprite-icon-add-comment-btn" type="submit" title="Добавить комментарий">
+                  <span class="visually-hidden">Добавить комментарий</span>
+                </button>
               </form>
-              <div class="modal-comments-list">
-                <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует/</p>
-                <p>В случае недостаточности предлагаемого обеспечения по кредиту Субъектом МСП, Банк-партнер информирует Субъекта МСП о возможности привлечения Поручительства РГО и Банковской гарантии АО "МСП Банк"</p>
-              </div>
             </div>
+            <ul class="modal-comments-list">
+              <li>
+                <a class="username sprite sprite-avatar2" href="#" title="Пользователь">
+                  <span class="visually-hidden">Пользователь</span>
+                </a>
+                <p>В случае недостаточности предлагаемого обеспечения по
+                кредиту Субъектом МСП, Банк-партнер информирует/</p>
+              </li>
+              <li>
+                <a class="username sprite sprite-avatar3" href="#" title="Пользователь">
+                <span class="visually-hidden">Пользователь</span>
+                </a>
+                <p>В случае недостаточности предлагаемого обеспечения по
+                  кредиту Субъектом МСП, Банк-партнер информирует
+                  Субъекта МСП о возможности привлечения
+                  Поручительства РГО и Банковской гарантии АО "МСП
+                  Банк"</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
