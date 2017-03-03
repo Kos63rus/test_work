@@ -72,7 +72,7 @@ body {
   width: 100px;
   height: 20px;
   transform: rotate(270deg);
-  margin-top: 58px;
+  margin-top: 63px;
   margin-left: -25px;
   font-size: 16px;
   line-height: 20px;
@@ -118,23 +118,51 @@ body {
   list-style: none;
 }
 
-.main-navigation-list > li {
-  margin-bottom: 38px;
+.main-navigation-list > li:nth-child(1) {
+  margin-bottom: 35px;
+}
+
+.main-navigation-list > li:nth-child(2) {
+  margin-bottom: 37px;
+}
+
+.main-navigation-list > li:nth-child(3) {
+  margin-bottom: 33px;
+}
+
+.main-navigation-list > li:nth-child(4) {
+  margin-bottom: 24px;
 }
 
 .main-navigation-list ul {
   margin: 0;
-  margin-top: 12px;
   margin-left: 12px;
   padding: 0;
   list-style: none;
 }
 
+.main-navigation-list .process {
+  margin-top: 15px;
+}
+
+.main-navigation-list .result {
+  margin-top: 17px;
+}
+
+.main-navigation-list .income {
+  margin-top: 17px;
+}
+
+.main-navigation-list .settings {
+  margin-top: 15px;
+}
+
+
 .process li,
 .result li,
 .income li,
 .settings li {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .flag-new::after {
@@ -247,7 +275,7 @@ body {
 
 .main-content-table th {
   padding: 0;
-  padding-top: 23px;
+  padding-top: 21px;
   padding-bottom: 32px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -269,7 +297,7 @@ body {
 .main-content-table th:nth-child(1),
 .main-content-table td:nth-child(1) {
   width: 45px;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 5px;
   text-align: center;
 }
@@ -493,7 +521,7 @@ body {
   display: block;
   width: 165px;
   min-height: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
@@ -509,7 +537,7 @@ body {
 }
 
 .modal {
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 0;
   right: 0;
@@ -525,16 +553,18 @@ body {
 .modal-container {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 550px;
+  height: 760px;
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 26px;
   overflow: hidden;
   /*outline: 1px solid red;*/
 }
 
 .modal-content-close {
   position: absolute;
-  top: 30px;
+  top: 28px;
   right: 30px;
   width: 15px;
   height: 15px;
@@ -569,7 +599,7 @@ body {
   width: 525px;
   min-height: 20px;
   margin: 0;
-  margin-bottom: 14px;
+  /*margin-bottom: 4px;*/
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -641,7 +671,7 @@ body {
   display: flex;
   width: 550px;
   min-height: 50px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   /*outline: 1px solid green;*/
 }
 
@@ -712,7 +742,7 @@ body {
   display: flex;
   width: 550px;
   min-height: 35px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   /*outline: 1px solid green;*/
 }
 
@@ -720,7 +750,7 @@ body {
   display: flex;
   width: 550px;
   min-height: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   /*outline: 1px solid green;*/
 }
 
@@ -728,7 +758,7 @@ body {
   display: flex;
   width: 550px;
   min-height: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   /*outline: 1px solid green;*/
 }
 
@@ -759,7 +789,7 @@ body {
 }
 
 .action-log li {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .modal .comments {
@@ -767,7 +797,6 @@ body {
   flex-wrap: wrap;
   width: 550px;
   height: 225px;
-
   /*outline: 1px solid green;*/
 }
 
@@ -819,7 +848,7 @@ body {
 .modal-comments-list li {
   position: relative;
   margin-bottom: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   border-bottom: 2px solid #eef2f5;
 }
 
