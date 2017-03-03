@@ -11,6 +11,13 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+}
+
 .container {
   display: flex;
   position: relative;
@@ -19,13 +26,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   /*outline: 1px solid red;*/
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 0;
-  height: 0;
 }
 
 .user-panel {
@@ -197,6 +197,11 @@ body {
   text-decoration: underline;
 }
 
+.main-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
 .search-form {
   position: relative;
   width: 150px;
@@ -272,6 +277,16 @@ body {
   border-collapse: collapse;
   /*outline: 1px solid green;*/
 }
+
+.main-content-table .active {
+  background-color: #e9f6ff;
+}
+
+.main-content-table tr:not(:first-child):hover {
+  background-color: #e9f6ff;
+  cursor: pointer;
+}
+
 
 .main-content-table th {
   padding: 0;
@@ -474,24 +489,24 @@ body {
 .main-content-table .sorting-inc::before {
   content: "";
   position: absolute;
-  top: -1px;
-  right: -17px;
+  top: 4px;
+  right: -12px;
   width: 0;
   height: 0;
-  border: 5px solid transparent;
-  border-bottom: 5px solid #c6c8cc;
+  border: 3px solid transparent;
+  border-bottom: 4px solid #c6c8cc;
   cursor: pointer;
 }
 
 .main-content-table .sorting-dec::after {
   content: "";
   position: absolute;
-  bottom: -1px;
-  right: -17px;
+  bottom: 1px;
+  right: -12px;
   width: 0;
   height: 0;
-  border: 5px solid transparent;
-  border-top: 5px solid #1d2532;
+  border: 3px solid transparent;
+  border-top: 4px solid #1d2532;
   cursor: pointer;
 }
 
@@ -537,7 +552,7 @@ body {
 }
 
 .modal {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
