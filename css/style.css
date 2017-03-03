@@ -8,7 +8,7 @@ body {
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
-  background-color: #282828;
+  background-color: #ffffff;
 }
 
 .container {
@@ -202,6 +202,7 @@ body {
 
 .actual-content {
   /*display: none;*/
+  position: relative;
   width: 950px;
   min-height: 760px;
   margin-left: 200px;
@@ -227,12 +228,17 @@ body {
   /*outline: 1px solid red;*/
 }
 
-.main-content-table {
+.main-table-wrapper {
   width: 900px;
-  min-height: 450px;
-  margin: 0;
+  height: 650px;
   margin-top: 25px;
   margin-left: 25px;
+  overflow-y: auto;
+  /*outline: 1px solid red;*/
+}
+
+.main-content-table {
+  margin: 0;
   padding: 0;
   background-color: #ffffff;
   border-collapse: collapse;
@@ -469,8 +475,41 @@ body {
   border: 4px solid #d1dde5;
 }
 
+.actual-content .badge {
+  position: absolute;
+  bottom: -4px;
+  right: 25px;
+  box-sizing: border-box;
+  width: 175px;
+  height: 179px;
+  padding-top: 120px;
+  text-align: center;
+  color: #000000;
+  background: #ffffff url("../img/icon-quill.png") no-repeat 0 0;
+  border: 5px solid #fed855;
+}
+
+.badge .badge-title {
+  display: block;
+  width: 165px;
+  min-height: 18px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.badge .badge-tender-count {
+  display: block;
+  width: 165px;
+  min-height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
 .modal {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
