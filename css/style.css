@@ -39,6 +39,8 @@ body {
 
 .user-panel .main-menu-btn {
   display: block;
+  width: 20px;
+  height: 14px;
   margin: 0 auto;
   margin-top: 18px;
   padding: 0;
@@ -46,6 +48,18 @@ body {
   color: #ffffff;
   background-color: #1d2532;
   cursor: pointer;
+}
+
+.user-panel .main-menu-btn:active {
+  outline: none;
+}
+
+.user-panel .main-menu-btn:focus {
+  outline: none;
+  box-shadow:
+      0 0 0 2px #1d2532,
+      0 0 0 4px #385e9e;
+  border-radius: 2px;
 }
 
 .icon-main-menu-btn {
@@ -94,7 +108,6 @@ body {
 }
 
 .user-panel .main-navigation {
-  /*display: none;*/
   position: absolute;
   top: 0;
   left: 50px;
@@ -233,15 +246,22 @@ body {
   /*outline: 1px solid red;*/
 }
 
+.main-content {
+  width: 100%;
+}
+
 .actual-content {
-  /*display: none;*/
   position: relative;
-  width: 950px;
+  width: 100%;
   min-height: 760px;
-  margin-left: 200px;
   color: #000000;
   background-color: #eef2f5;
   /*outline: 1px solid blue;*/
+}
+
+.visually-narrow {
+  width: 950px;
+  margin-left: 200px;
 }
 
 .main-content-title {
@@ -262,15 +282,19 @@ body {
 }
 
 .main-table-wrapper {
-  width: 900px;
+  box-sizing: border-box;
+  width: 100%;
   height: 650px;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
   overflow-y: auto;
   /*outline: 1px solid red;*/
 }
 
 .main-content-table {
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -552,7 +576,6 @@ body {
 }
 
 .modal {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
