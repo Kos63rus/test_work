@@ -17,36 +17,71 @@ mainMenuBtn.addEventListener("click", function(event){
 
 openModal1.addEventListener("click", function(event){
   event.preventDefault();
+  openModal1.classList.add("active");
   popup.classList.remove("visually-hidden");
 });
 
 openModal2.addEventListener("click", function(event){
   event.preventDefault();
+  openModal2.classList.add("active");
   popup.classList.remove("visually-hidden");
 });
 
 openModal3.addEventListener("click", function(event){
   event.preventDefault();
+  openModal3.classList.add("active");
   popup.classList.remove("visually-hidden");
 });
 
 openModal4.addEventListener("click", function(event){
   event.preventDefault();
+  openModal4.classList.add("active");
   popup.classList.remove("visually-hidden");
 });
 
 openModal5.addEventListener("click", function(event){
   event.preventDefault();
+  openModal5.classList.add("active");
   popup.classList.remove("visually-hidden");
 });
 
 closeModal.addEventListener("click", function(event){
   event.preventDefault();
   popup.classList.add("visually-hidden");
+  if (openModal1.classList.contains("active")) {
+    openModal1.classList.remove("active");
+  };
+  if (openModal2.classList.contains("active")) {
+    openModal2.classList.remove("active");
+  };
+  if (openModal3.classList.contains("active")) {
+    openModal3.classList.remove("active");
+  };
+  if (openModal4.classList.contains("active")) {
+    openModal4.classList.remove("active");
+  };
+  if (openModal5.classList.contains("active")) {
+    openModal5.classList.remove("active");
+  };
 });
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     popup.classList.add("visually-hidden");
   }
+  if (openModal1.classList.contains("active")) {
+    openModal1.classList.remove("active");
+  };
+  if (openModal2.classList.contains("active")) {
+    openModal2.classList.remove("active");
+  };
+  if (openModal3.classList.contains("active")) {
+    openModal3.classList.remove("active");
+  };
+  if (openModal4.classList.contains("active")) {
+    openModal4.classList.remove("active");
+  };
+  if (openModal5.classList.contains("active")) {
+    openModal5.classList.remove("active");
+  };
 });

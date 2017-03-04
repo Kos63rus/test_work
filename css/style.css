@@ -302,13 +302,17 @@ body {
   /*outline: 1px solid green;*/
 }
 
-.main-content-table .active {
+.active {
   background-color: #e9f6ff;
 }
 
 .main-content-table tr:not(:first-child):hover {
   background-color: #e9f6ff;
   cursor: pointer;
+}
+
+.main-content-table tr:not(:first-child):active {
+  background-color: #e9f6ff;
 }
 
 
